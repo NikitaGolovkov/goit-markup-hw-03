@@ -35,7 +35,10 @@ body {
 
 img {
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
+
 div > img {
 	display: inline-block;
 }
@@ -73,6 +76,7 @@ div > img {
 
 .page-header {
 	padding: 25px 0px;
+	border-bottom: #ececec solid 1px;
 }
 
 .navigation {
@@ -300,22 +304,36 @@ a > span {
 }
 
 .clients-list {
+	display: flex;
 	margin: 0;
 	padding: 0;
 }
 
 .clients-item {
 	list-style-type: none;
-	display: inline-block;
+	display: inline-table;
+	border: #afb1b8 solid 1px;
+	border-radius: 4px;
+	width: 170px;
+	height: 90px;
 }
+
+.clients-img {
+	align-items: center;
+	min-height: 90px;
+	display: flex;
+	justify-content: center;
+}
+
 .clients-item:not(:last-child) {
-	width: calc((100% - 150px) / 6);
 	margin-right: 30px;
 }
 
 /* Подвал страницы */
 
-.logo-footer {
+.logo-footer a {
+	display: block;
+	color: var(--white-color);
 	margin: 0 0 20px 0;
 }
 .footer-flex {
@@ -431,6 +449,7 @@ a > span {
 }
 
 .description {
+	text-align: start;
 	padding: 0 24px 20px;
 }
 
