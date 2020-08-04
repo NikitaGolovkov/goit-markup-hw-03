@@ -192,9 +192,12 @@ a > span {
 }
 
 /* Наши преимущества */
-.advantage-list {
+
+.advantages {
 	padding-top: 94px;
 	padding-bottom: 94px;
+}
+.advantage-list {
 	display: flex;
 	list-style-type: none;
 }
@@ -224,8 +227,12 @@ a > span {
 	color: var(--text-color);
 }
 /* Чем мы занимаемся */
-.doing-list {
+
+.doing {
+	padding-top: 20px;
 	padding-bottom: 94px;
+}
+.doing-list {
 	margin: 0;
 	display: flex;
 	list-style-type: none;
@@ -247,7 +254,7 @@ a > span {
 }
 /* Наша команда */
 .command {
-	padding-top: 95px;
+	padding-top: 94px;
 	padding-bottom: 94px;
 	background-color: #f5f4fa;
 }
